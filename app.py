@@ -4,7 +4,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return """
+    return
+    render_template("index.html")
+    @app.route("/")
+    def about():
+        return
+        render_template("about.html")
     <html>
     <head>
         <title>Golsarotter</title>
